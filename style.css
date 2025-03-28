@@ -1,0 +1,244 @@
+  /* Reset básico para garantir consistência entre os navegadores */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Verdana, Tahoma, sans-serif;
+    background-image: url("/Users/layane.cris/Desktop/PI3/imagem /ferramentas-do-cabeleireiro-no-fundo-de-madeira-com-espaço-da-cópia-na-parte-superior-56486768.webp");
+    background-color: #ffffff;
+    color: #333;
+    line-height: 1.6;
+    padding: 60px;
+}
+
+header img {
+    width: 350px; /* Ajuste o tamanho conforme necessário */
+    height: auto; /* Mantém a proporção da imagem */
+    display: block; /* Garante que a imagem seja exibida como um bloco */
+    margin: 0 auto; /* Centraliza a imagem horizontalmente */
+    padding: 5px; /* Adiciona um pouco de espaço ao redor da imagem */
+}
+
+/* Cabeçalho */
+header {
+    background-color: #ffffffa1;
+    color: rgb(17, 17, 17);
+    padding: 80px;
+    text-align: center;
+    margin-top: 40px; /* Ajuste o valor conforme necessário */
+    margin: block start 20px;
+    border-radius: 40px;
+}
+
+header .logo {
+    max-width: 700px;
+    margin-bottom: 10px;
+}
+
+header .tagline {
+    font-size: 1.1em;
+    margin-top: 30px;
+}
+
+header .cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0a0909;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+header .cta-button:hover {
+    background-color: #171616;
+}
+
+/* Seção principal */
+main {
+    max-width: 900px;
+    margin: 10px auto;
+}
+
+/* Formulário */
+/* Estilo para os rótulos dos formulários */
+form label {
+    font-family: 'Arial', sans-serif; /* Fonte do rótulo */
+    font-size: 16px; /* Tamanho da fonte */
+    color: #111111; /* Cor da fonte */
+    margin-bottom: 5px; /* Espaçamento abaixo do rótulo */
+    display: block; /* Exibir como bloco */
+}
+
+/* Estilo para os campos de entrada dos formulários */
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"],
+form input[type="date"],
+form input[type="time"],
+form select,
+form textarea {
+    font-family: 'Verdana', sans-serif; /* Fonte dos campos de entrada */
+    font-size: 14px; /* Tamanho da fonte */
+    color: #333333; /* Cor da fonte */
+    padding: 10px; /* Espaçamento interno */
+    margin-bottom: 10px; /* Espaçamento abaixo do campo */
+    border: 1px solid #cccccc; /* Borda dos campos */
+    border-radius: 5px; /* Arredondamento das bordas */
+    width: 100%; /* Largura total do campo */
+    box-sizing: border-box; /* Inclui padding e border na largura total */
+}
+
+/* Estilo para o botão de envio */
+form button[type="submit"] {
+    font-family: 'Tahoma', sans-serif; /* Fonte do botão */
+    font-size: 16px; /* Tamanho da fonte */
+    color: #ffffff; /* Cor da fonte */
+    background-color: #030303; /* Cor de fundo */
+    padding: 10px 20px; /* Espaçamento interno */
+    border: none; /* Sem borda */
+    border-radius: 5px; /* Arredondamento das bordas */
+    cursor: pointer; /* Cursor de ponteiro */
+}
+
+/* Estilo para o botão de envio ao passar o mouse */
+form button[type="submit"]:hover {
+    background-color: #0b0c0e; /* Cor de fundo ao passar o mouse */
+}
+form {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.8em;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #070707;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.form-control:focus {
+    border-color: #66afe9;
+    outline: none;
+    box-shadow: 0 0 8px rgba(102, 175, 233, 0.6);
+}
+
+/* Seção de agendamentos realizados */
+#appointments {
+    margin-top: 20px;
+}
+
+#appointments h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.8em;
+    color: #0a0a0a;
+}
+
+#appointment-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+#appointment-list li {
+    background-color: #d946e38b;
+    padding: 10px;
+    margin-bottom: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Estilo dos botões */
+.submit-btn {
+    background-color: #0b0a0a;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2em;
+    width: 100%;
+    text-align: center;
+}
+
+.submit-btn:hover {
+    background-color: #141414;
+}
+
+/* Rodapé */
+footer {
+    background-color: #ffffffa1;
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    text-align: center;
+    margin-top: 40px;
+    border-radius: 8px;
+}
+
+footer .contact-info p {
+    font-size: 1em;
+    margin: 5px 0;
+}
+.contact-info img {
+    width: 40px;
+    background-color: transparent;
+}
+
+/* Responsividade para dispositivos móveis */
+@media screen and (max-width: 768px) {
+    header .logo {
+        max-width: 150px;
+    }
+
+    .cta-button {
+        font-size: 1em;
+        padding: 8px 16px;
+    }
+
+    form {
+        padding: 20px;
+    }
+
+    .form-group input,
+    .form-group select {
+        font-size: 0.9em;
+    }
+
+    .submit-btn {
+        font-size: 1em;
+    }
+}
+#calendar-content .day {
+    margin-bottom: 10px;
+}
+
+#calendar-content .time-slot {
+    background-color: #e0e0e0;
+    padding: 5px;
+    margin: 5px 0;
+    border-radius: 3px;
+}
